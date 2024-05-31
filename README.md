@@ -4,19 +4,9 @@
 
 ## **Description 📃**
 
-TaxEase.AI is a user-friendly AI assistant designed to demystify and simplify US tax filing, a system that has become needlessly convoluted and stressful for millions of Americans. 
-
-As eloquently captured by Emmy-winning journalist Johnny Harris in his video essay "Why Americans Pay to Do Their Taxes?", the current system forces citizens to navigate a labyrinth of complex forms and expensive software, all while simpler, government-run solutions exist elsewhere. TaxEase.AI aims to address this absurdity, offering a better way forward.
-
-Here's how TaxEase.AI works:
-
-* **Direct Form Filling:** Already know the forms you need? TaxEase.AI acts as your smart assistant, guiding you through the process and answering your questions in real-time. 
-* **Interactive Guidance:**  Not sure where to start? TaxEase.AI engages in a friendly Q&A to understand your unique situation. It then recommends relevant forms, identifies potential deductions, and helps you avoid costly errors.
+**TaxEase.AI** is a user-friendly AI assistant designed to demystify and simplify US tax filing, a system that has become needlessly convoluted and stressful for millions of Americans. 
 
 Built on the powerful Vertex AI platform, TaxEase.AI utilizes a comprehensive knowledge base within Datastore, containing up-to-date tax forms, instructions, FAQs, and more. Seamless communication via OpenAPI and a sophisticated Retrieval Augmented Generation (RAG) approach ensure that TaxEase.AI provides accurate, personalized, and easy-to-understand guidance throughout the entire tax filing process. 
-
-Join us in taking a stand against confusing tax systems and empowering Americans to file with confidence and ease! 
-
 
 ## **Inspiration ✨**
 
