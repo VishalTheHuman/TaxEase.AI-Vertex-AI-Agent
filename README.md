@@ -3,7 +3,6 @@
 ![TaxEase.AI Banner](assets/banner.png)
 
 ## **Description 📃**
-## TaxEase.AI: Taking the Headache Out of Tax Filing 🤖💰
 
 TaxEase.AI is a user-friendly AI assistant designed to demystify and simplify US tax filing, a system that has become needlessly convoluted and stressful for millions of Americans. 
 
