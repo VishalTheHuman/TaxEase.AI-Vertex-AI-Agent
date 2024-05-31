@@ -24,5 +24,3 @@
         <td><b style="display:block; margin:auto;">Saran Dharshan S P</b></td>
     </tr>
 </table>
-
-<p style="text-align:center;"><b>Made with 💚 by CTRL + ALT + DEV</b></p>
