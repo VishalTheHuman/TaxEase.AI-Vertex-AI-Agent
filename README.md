@@ -72,186 +72,83 @@ TaxEase.AI is a user-friendly AI assistant designed to demystify and simplify US
 * **Testing & Refinement:** We'll be conducting thorough testing with real users to gather feedback and make TaxEase.AI even more accurate and user-friendly.
 * **Advocacy for Change:**  We plan to use TaxEase.AI to raise awareness about the need for a simpler, fairer, and more transparent US tax system.  
 
+## **Forms and Instructions 📃**
 
-## **Forms & Instructions 📃**
+#### **Forms ✒️**
 
-<div class="center" style=" max-width: 600px; margin: 0 auto; text-align: center;">
-<table style="width: 100%; border-collapse: collapse;">
-    <tr>
-        <th style="text-align: center;"><strong>Forms</strong></th>
-        <th style="text-align: center;"><strong>Instructions</strong></th>
-    </tr>
-    <tr>
-        <td>1040-NR</td>
-        <td>1040-NR</td>
-    </tr>
-    <tr>
-        <td>1040-S1</td>
-        <td>1040-SE</td>
-    </tr>
-    <tr>
-        <td>1040-S2</td>
-        <td>1040</td>
-    </tr>
-    <tr>
-        <td>1040-S3</td>
-        <td>1042-S</td>
-    </tr>
-    <tr>
-        <td>1040-SE</td>
-        <td>1094-B_1095-B</td>
-    </tr>
-    <tr>
-        <td>1040</td>
-        <td>1094-C_1095-C</td>
-    </tr>
-    <tr>
-        <td>1042-S</td>
-        <td>1095-A</td>
-    </tr>
-    <tr>
-        <td>1095-A</td>
-        <td>1098-E_1098-T</td>
-    </tr>
-    <tr>
-        <td>1095-B</td>
-        <td>1098</td>
-    </tr>
-    <tr>
-        <td>1095-C</td>
-        <td>1099-B</td>
-    </tr>
-    <tr>
-        <td>1098-E</td>
-        <td>1099-DIV</td>
-    </tr>
-    <tr>
-        <td>1098-T</td>
-        <td>1099-G</td>
-    </tr>
-    <tr>
-        <td>1098</td>
-        <td>1099-INT_OID</td>
-    </tr>
-    <tr>
-        <td>1099-B</td>
-        <td>1099-K</td>
-    </tr>
-    <tr>
-        <td>1099-DIV</td>
-        <td>1099-MISC_NEC</td>
-    </tr>
-    <tr>
-        <td>1099-G</td>
-        <td>1099-R_5498</td>
-    </tr>
-    <tr>
-        <td>1099-INT</td>
-        <td>1099-S</td>
-    </tr>
-    <tr>
-        <td>1099-K</td>
-        <td>2441</td>
-    </tr>
-    <tr>
-        <td>1099-MISC</td>
-        <td>3921_3922</td>
-    </tr>
-    <tr>
-        <td>1099-NEC</td>
-        <td>8027</td>
-    </tr>
-    <tr>
-        <td>1099-R</td>
-        <td>8804_8805_8813</td>
-    </tr>
-    <tr>
-        <td>1099-S</td>
-        <td>8839</td>
-    </tr>
-    <tr>
-        <td>2441</td>
-        <td>8959</td>
-    </tr>
-    <tr>
-        <td>3921</td>
-        <td>8962</td>
-    </tr>
-    <tr>
-        <td>3922</td>
-        <td>8995</td>
-    </tr>
-    <tr>
-        <td>4137</td>
-        <td>SS-8</td>
-    </tr>
-    <tr>
-        <td>4972</td>
-        <td>W-2G_5754</td>
-    </tr>
-    <tr>
-        <td>5498</td>
-        <td>W-2_W-3</td>
-    </tr>
-    <tr>
-        <td>8027</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8288-A</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8805</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8814</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8839</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8888</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8919</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8959</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8962</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8995</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>SS-8</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>W-2</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>W-2AS</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>W-2G</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>W-2GU</td>
-        <td></td>
-    </tr>
-</table>
-    </div>
+- 1040-NR
+- 1040-S1
+- 1040-S2
+- 1040-S3
+- 1040-SE
+- 1040
+- 1042-S
+- 1095-A
+- 1095-B
+- 1095-C
+- 1098-E
+- 1098-T
+- 1098
+- 1099-B
+- 1099-DIV
+- 1099-G
+- 1099-INT
+- 1099-K
+- 1099-MISC
+- 1099-NEC
+- 1099-R
+- 1099-S
+- 2441
+- 3921
+- 3922
+- 4137
+- 4972
+- 5498
+- 8027
+- 8288-A
+- 8805
+- 8814
+- 8839
+- 8888
+- 8919
+- 8959
+- 8962
+- 8995
+- SS-8
+- W-2
+- W-2AS
+- W-2G
+- W-2GU
+
+#### **Instructions 👨‍🏫**
+- 1040-NR
+- 1040-SE
+- 1040
+- 1042-S
+- 1094-B, 1095-B
+- 1094-C, 1095-C
+- 1095-A
+- 1098-E, 1098-T
+- 1098
+- 1099-B
+- 1099-DIV
+- 1099-G
+- 1099-INT, 1099-OID
+- 1099-K
+- 1099-MISC, 1099-NEC
+- 1099-R, 5498
+- 1099-S
+- 2441
+- 3921, 3922
+- 8027
+- 8804, 8805, 8813
+- 8839
+- 8959
+- 8962
+- 8995
+- SS-8
+- W-2G_5754
+- W-2, W-3
+
+## **Screenshots 💻**
+
