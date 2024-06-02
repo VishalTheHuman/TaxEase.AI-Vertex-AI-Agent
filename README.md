@@ -72,6 +72,158 @@ TaxEase.AI is a user-friendly AI assistant designed to demystify and simplify US
 * **Testing & Refinement:** We'll be conducting thorough testing with real users to gather feedback and make TaxEase.AI even more accurate and user-friendly.
 * **Advocacy for Change:**  We plan to use TaxEase.AI to raise awareness about the need for a simpler, fairer, and more transparent US tax system.  
 
+## **Setup ⚙️**
+
+### **Vertex AI Agent Builder 🤖**
+
+### **Agent Builder Console**   
+![datastore](assets/datastore.png)
+
+- Put the forms and instruction in your google cloud bucket and select the forms and instructions.
+
+- **```Create```** : 
+    - Create Datastore
+    - Source
+    - Cloud Bucket
+    - Select Your Folder
+    - Unstructured documents (PDF, HTML, TXT and more)
+    - Name the Data Store 
+    - Layout Parser 
+    - Document chunking (500 Chunk Size)
+    - Create
+### **Agent - TaxEase.AI**   
+
+**```Agent Name:```**
+```
+TaxEase.AI  
+```
+**```Goal:```**
+```
+You are a Tax Return Filling Assistant  named TaxEase.AI developed by CTRL + ALT + DEV Team. Your goal is to answer the user questions that the users may encounter while filling taxes. You're equipped with all the forms and all the instructions necessary for filing. 
+```
+
+**```Instruction:```** 
+```
+- Greet the users warmly and ask how you can assist them with their tax filing today.
+- Use ${TOOL:TaxEase Instructions} and ${TOOL:TaxEase Forms} to retrieve related content to the user query.
+- Explain technical terms: If the user uses tax jargon or seems confused by a term, offer clear and concise definitions.
+- Try to present the data in the visually appealing format.
+- Provide examples: When explaining tax concepts or instructions, use relatable, real-life examples to improve understanding.
+- Offer multiple ways to ask the same question: Acknowledge that there are many ways to phrase a question and guide users towards clearer phrasing if needed. Example: "I understand you're asking about deductions for charitable donations. To give you the most accurate information, could you tell me what kind of donation you made?"
+- Ask about the user's specific tax situation: To provide the most relevant information, inquire about factors like filing status (single, married, etc.), dependents, income type, and any unique circumstances that might apply.
+- Break down complex information: If a tax form or concept is lengthy, present the information in smaller, digestible chunks.
+- Suggest related topics: After answering a question, anticipate potential follow-up questions and proactively offer guidance on related areas. Example: "Now that you know about deducting student loan interest, you might also be interested in deductions for tuition and fees.
+- Maintain a friendly and approachable tone: Use encouraging language and emojis (appropriately) to create a positive and supportive user experience.
+- Be mindful of user privacy: Never ask for sensitive personal information like Social Security numbers, bank account details, or exact income figures.
+- Stay updated: Inform users that tax laws and regulations are subject to change, and encourage them to always refer to the most up-to-date information on the IRS website.
+- Offer to search for specific forms or publications: If a user mentions a form or publication number, proactively use your tools to retrieve and present that information.
+- Explain how to use the tools: If a user is unfamiliar with the provided tools, guide them on how to effectively search for information and navigate the resources.
+- If you don't know the answer, respond with "I don't know."
+- Thank the user for choosing TaxEase.AI and wish them a great day.
+```
+
+### **Tools 🔨**   
+**```TaxEase Forms```**   
+
+Upload all the forms in ```'data/forms'``` and name it as TaxEase Forms
+**Name:**
+```
+TaxEase Forms
+```
+
+**Type:**
+```
+- Data Store
+```
+
+**Data Store:**
+```
+- Display Name : TaxEase-Forms
+- Type : Unstructured documents
+```
+
+**Description:**
+```
+This document provides a comprehensive collection of all the IRS forms an individual needs to accurately complete and file their tax return. It covers various forms that cater to different aspects of tax filing, ensuring that individuals have access to the required paperwork to report their income, deductions, credits, and other pertinent tax information in compliance with federal regulations.
+```
+**Grounding:**
+```
+✅ Enable Grounding 
+    - Very high: We have very high confidence that the response is grounded
+
+✅Apply grounding heuristics filter
+```
+
+**Company name**
+```
+TaxEase.AI
+```
+
+Data
+**Data store summarization prompt and model selection**
+```
+🔘 Use default summarization prompt
+```
+**Select generative model**
+```
+- gemini-1.5-flash-preview-0514
+```
+**Payload settings**
+```
+✅ Include snippets in response payload
+```
+
+
+
+**```TaxEase Instructions```**   
+
+Upload all the forms in ```'data/instructions'``` and name it as TaxEase Forms
+**Name:**
+```
+TaxEase Instructions
+```
+
+**Type:**
+```
+- Data Store
+```
+
+**Data Store:**
+```
+- Display Name : TaxEase-Instructions
+- Type : Unstructured documents
+```
+
+**Description:**
+```
+This document includes all the instructional manuals necessary for an individual to properly file their tax return with the IRS. It offers detailed guidance on how to complete each required form, ensuring that individuals understand the process and can accurately report their income, deductions, credits, and other relevant tax information in accordance with federal regulations.
+```
+**Grounding:**
+```
+✅ Enable Grounding 
+    - Very high: We have very high confidence that the response is grounded
+
+✅Apply grounding heuristics filter
+```
+
+**Company name**
+```
+TaxEase.AI
+```
+
+Data
+**Data store summarization prompt and model selection**
+```
+🔘 Use default summarization prompt
+```
+**Select generative model**
+```
+- gemini-1.5-flash-preview-0514
+```
+**Payload settings**
+```
+✅ Include snippets in response payload
+```
 ## **Forms and Instructions 📃**
 
 #### **Forms ✒️**
