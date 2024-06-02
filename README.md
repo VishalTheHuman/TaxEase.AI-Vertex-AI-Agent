@@ -8,6 +8,25 @@
 
 Built on the powerful Vertex AI platform, TaxEase.AI utilizes a comprehensive knowledge base within Datastore, containing up-to-date tax forms, instructions, FAQs, and more. Seamless communication via OpenAPI and a sophisticated Retrieval Augmented Generation (RAG) approach ensure that TaxEase.AI provides accurate, personalized, and easy-to-understand guidance throughout the entire tax filing process. 
 
+## **Contributors 🦖**
+<table style="width:100%; text-align:center;border: none;">
+    <tr>
+        <td style="width:33.33%;"><img src="https://github.com/VishalTheHuman.png/" style="width:100%; height:auto;"></td>
+        <td style="width:33.33%;"><img src="https://github.com/amri-tah.png/" style="width:100%; height:auto;"></td>
+        <td style="width:33.33%;"><img src="https://github.com/SaranDharshanSP.png/" style="width:120%; height:auto;"></td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/VishalTheHuman" style="display:block; margin:auto;">@VishalTheHuman</a></td>
+        <td><a href="https://github.com/amri-tah" style="display:block; margin:auto;">@amri-tah</a></td>
+        <td><a href="https://github.com/SaranDharshanSP" style="display:block; margin:auto;">@SaranDharshanSP</a></td>
+    </tr>
+    <tr>
+        <td><b style="display:block; margin:auto;">Vishal S</b></td>
+        <td><b style="display:block; margin:auto;">Amritha Nandini</b></td>
+        <td><b style="display:block; margin:auto;">Saran Dharshan S P</b></td>
+    </tr>
+</table>
+
 ## **Inspiration ✨**
 
 Our inspiration for **TaxEase.AI** stemmed from a deep empathy for the millions of Americans who dread the annual ritual of tax filing.  Emmy-winning journalist Johnny Harris eloquently captured this sentiment in his video essay, 
@@ -53,23 +72,186 @@ TaxEase.AI is a user-friendly AI assistant designed to demystify and simplify US
 * **Testing & Refinement:** We'll be conducting thorough testing with real users to gather feedback and make TaxEase.AI even more accurate and user-friendly.
 * **Advocacy for Change:**  We plan to use TaxEase.AI to raise awareness about the need for a simpler, fairer, and more transparent US tax system.  
 
-## **Screenshots 💻**
 
-## **Contributors 🦖**
-<table style="width:100%; text-align:center;border: none;">
+## **Forms & Instructions 📃**
+
+<div class="center" style=" max-width: 600px; margin: 0 auto; text-align: center;">
+<table style="width: 100%; border-collapse: collapse;">
     <tr>
-        <td style="width:33.33%;"><img src="https://github.com/VishalTheHuman.png/" style="width:100%; height:auto;"></td>
-        <td style="width:33.33%;"><img src="https://github.com/amri-tah.png/" style="width:100%; height:auto;"></td>
-        <td style="width:33.33%;"><img src="https://github.com/SaranDharshanSP.png/" style="width:120%; height:auto;"></td>
+        <th style="text-align: center;"><strong>Forms</strong></th>
+        <th style="text-align: center;"><strong>Instructions</strong></th>
     </tr>
     <tr>
-        <td><a href="https://github.com/VishalTheHuman" style="display:block; margin:auto;">@VishalTheHuman</a></td>
-        <td><a href="https://github.com/amri-tah" style="display:block; margin:auto;">@amri-tah</a></td>
-        <td><a href="https://github.com/SaranDharshanSP" style="display:block; margin:auto;">@SaranDharshanSP</a></td>
+        <td>1040-NR</td>
+        <td>1040-NR</td>
     </tr>
     <tr>
-        <td><b style="display:block; margin:auto;">Vishal S</b></td>
-        <td><b style="display:block; margin:auto;">Amritha Nandini</b></td>
-        <td><b style="display:block; margin:auto;">Saran Dharshan S P</b></td>
+        <td>1040-S1</td>
+        <td>1040-SE</td>
+    </tr>
+    <tr>
+        <td>1040-S2</td>
+        <td>1040</td>
+    </tr>
+    <tr>
+        <td>1040-S3</td>
+        <td>1042-S</td>
+    </tr>
+    <tr>
+        <td>1040-SE</td>
+        <td>1094-B_1095-B</td>
+    </tr>
+    <tr>
+        <td>1040</td>
+        <td>1094-C_1095-C</td>
+    </tr>
+    <tr>
+        <td>1042-S</td>
+        <td>1095-A</td>
+    </tr>
+    <tr>
+        <td>1095-A</td>
+        <td>1098-E_1098-T</td>
+    </tr>
+    <tr>
+        <td>1095-B</td>
+        <td>1098</td>
+    </tr>
+    <tr>
+        <td>1095-C</td>
+        <td>1099-B</td>
+    </tr>
+    <tr>
+        <td>1098-E</td>
+        <td>1099-DIV</td>
+    </tr>
+    <tr>
+        <td>1098-T</td>
+        <td>1099-G</td>
+    </tr>
+    <tr>
+        <td>1098</td>
+        <td>1099-INT_OID</td>
+    </tr>
+    <tr>
+        <td>1099-B</td>
+        <td>1099-K</td>
+    </tr>
+    <tr>
+        <td>1099-DIV</td>
+        <td>1099-MISC_NEC</td>
+    </tr>
+    <tr>
+        <td>1099-G</td>
+        <td>1099-R_5498</td>
+    </tr>
+    <tr>
+        <td>1099-INT</td>
+        <td>1099-S</td>
+    </tr>
+    <tr>
+        <td>1099-K</td>
+        <td>2441</td>
+    </tr>
+    <tr>
+        <td>1099-MISC</td>
+        <td>3921_3922</td>
+    </tr>
+    <tr>
+        <td>1099-NEC</td>
+        <td>8027</td>
+    </tr>
+    <tr>
+        <td>1099-R</td>
+        <td>8804_8805_8813</td>
+    </tr>
+    <tr>
+        <td>1099-S</td>
+        <td>8839</td>
+    </tr>
+    <tr>
+        <td>2441</td>
+        <td>8959</td>
+    </tr>
+    <tr>
+        <td>3921</td>
+        <td>8962</td>
+    </tr>
+    <tr>
+        <td>3922</td>
+        <td>8995</td>
+    </tr>
+    <tr>
+        <td>4137</td>
+        <td>SS-8</td>
+    </tr>
+    <tr>
+        <td>4972</td>
+        <td>W-2G_5754</td>
+    </tr>
+    <tr>
+        <td>5498</td>
+        <td>W-2_W-3</td>
+    </tr>
+    <tr>
+        <td>8027</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8288-A</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8805</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8814</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8839</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8888</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8919</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8959</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8962</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8995</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SS-8</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>W-2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>W-2AS</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>W-2G</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>W-2GU</td>
+        <td></td>
     </tr>
 </table>
+    </div>
