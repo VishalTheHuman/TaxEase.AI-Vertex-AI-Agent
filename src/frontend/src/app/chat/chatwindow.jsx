@@ -7,18 +7,31 @@ const ChatWindow = () => {
   const [messages, setMessages] = useState([]);
   const messagesEndRef = useRef(null);
 
-  const sendMessage = (e) => {
+  const sendMessage = async (e) => {
     e.preventDefault();
     if (message.trim()) {
       const newMessages = [...messages, { text: message, sender: 'user' }];
       setMessages(newMessages);
       setMessage('');
-      setTimeout(() => {
-        const botReply = { text: 'okay', sender: 'bot' };
-        
+
+      try {
+        const response = await fetch('http://127.0.0.1:8000/query/' + message);
+        let botText = '';
+        if (response.ok) {
+          const data = await response.json();
+          botText = data.response;
+        } else {
+          botText = 'Error: Unable to fetch response';
+        }
+        console.log(botText)
+        const botReply = { text: botText, sender: 'bot' };
+
         setMessages((prevMessages) => [...prevMessages, botReply]);
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-      }, 500); // Simulate a slight delay for bot response
+      } catch (error) {
+        console.error('Error fetching bot response:', error);
+      }
+
       messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
   };

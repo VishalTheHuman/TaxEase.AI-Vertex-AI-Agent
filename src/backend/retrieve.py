@@ -7,6 +7,7 @@ from vertexai.preview.generative_models import (
 )
 import vertexai
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 import asyncio
 
 PROJECT_ID = "taxeaseai"
@@ -19,6 +20,19 @@ vertexai.init(project=PROJECT_ID, location=REGION)
 model = GenerativeModel("gemini-1.5-pro-001")
 model = model.start_chat()
 app = FastAPI()
+
+origins = [
+    "http://localhost:3000",
+    # Add other origins here if you have more frontends
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 INSTRUCTION = """
 GOAL:
