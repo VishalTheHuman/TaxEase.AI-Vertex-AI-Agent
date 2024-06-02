@@ -1,6 +1,7 @@
 'use client';
 import {React, useState} from "react";
 import ChatWindow from "./chatwindow";
+import Link from "next/link";
 
 export default function ChatPage() {
   const [selectedForm, setSelectedForm] = useState("");
@@ -30,7 +31,8 @@ export default function ChatPage() {
     
       <div className="w-[30%] bg-blackish">
         <div className="bg-primary text-accent text-center p-5 pt-8">
-          <h1 className="font-black leading-5 text-[2rem]">TaxEase.AI</h1>
+          <Link href="/"><h1 className="font-black leading-5 text-[2rem]">TaxEase.AI</h1></Link>
+          
           <p className="text-lg">Your personal tax coach 💸🏛️</p>
 
           <div className="mt-6">

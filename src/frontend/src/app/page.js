@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "@/components/Logo"
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import githublogo from "../../public/githublogo.png";
 
 export default function Home() {
   return (
@@ -19,16 +20,19 @@ export default function Home() {
             <p className="italic">
               Simplifying tax filing with AI expertise, saving you time and money!
             </p>
-            {/* <Link href="/">
-              <p className="text-blackish bg-accent mt-5 mb-3 p-3 rounded-xl text-lg text-center">
-                Learn More
-              </p>
-            </Link> */}
+            
 
             <Link href="/chat">
               <p className="text-blackish bg-accent p-3 rounded-xl text-lg text-center font-black mt-4">
                 Let's get started!
               </p>
+            </Link>
+            <Link href="https://github.com/VishalTheHuman/TaxEase.AI-Vertex-AI-Agent" target="_blank">
+
+              <div className="text-blackish flex gap-2 justify-center bg-accent mt-2 mb-2 p-3 rounded-xl text-lg text-center w-full items-center">
+              <Image src={githublogo} width={25}/>
+                View on Github
+              </div>
             </Link>
           </div>
         </div>
