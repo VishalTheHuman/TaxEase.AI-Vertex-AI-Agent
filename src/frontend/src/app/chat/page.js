@@ -1,17 +1,29 @@
-import {React} from "react";
-import { promises as fs } from "fs";
+'use client';
+import {React, useState} from "react";
 import ChatWindow from "./chatwindow";
 
-export default async function ChatPage() {
-  const file = await fs.readFile(process.cwd() + "/public/info.json", "utf8");
-  const data = JSON.parse(file);
-  const formNames = Object.keys(data);
+export default function ChatPage() {
+  const [selectedForm, setSelectedForm] = useState("");
+  const [pdfSrc, setPdfSrc] = useState("/pdfs/1040.pdf"); // Default PDF source
+
+  // Function to handle form selection change
+  const handleFormChange = (event) => {
+    const selectedForm = event.target.value;
+    setSelectedForm(selectedForm);
+    // Assuming your data object has the path to PDF for each form
+    const formPath = "/pdfs/"+selectedForm+".pdf";
+    setPdfSrc(formPath);
+  };
+  const formNames = ['1040', '1040-NR', '1040-S1', '1040-S2', '1040-S3', '1040-SE',
+   '1042-S', '1095-A', '1095-B', '1095-C', '1098', '1098-E', '1098-T', '1099-B', '1099-DIV',
+  '1099-G', '1099-INT', '1099-K', '1099-MISC', '1099-NEC', '1099-R', '1099-S', '2441', '3921', '3922', '4137', '4972',
+    '5498', '8027', '8288-A', '8805', '8814', '8839', '8888', '8919', '8959', '8962', '8995', 'SS-8', 'W-2', 'W-2AS', 'W-2G', 'W-2GU'];
 
   return (
-    <div className="flex h-[97vh]">
+    <div className="flex h-full">
       <div className="w-[70%]">
       <iframe
-          src="https://www.irs.gov/pub/irs-pdf/f1040nr.pdf" 
+          src={pdfSrc} 
           className="w-full h-full"
         /></div>
 
@@ -23,7 +35,7 @@ export default async function ChatPage() {
 
           <div className="mt-6">
             <label htmlFor="formSelect">Select a Form:</label><br/>
-            <select id="formSelect" className="px-4 py-2 mt-1 text-black rounded-xl focus:outline-0">
+            <select id="formSelect" className="px-4 py-2 mt-1 text-black rounded-xl focus:outline-0"  onChange={handleFormChange}>
               {formNames.map((formName, index) => (
                 <option key={index} value={formName}>
                   {formName}

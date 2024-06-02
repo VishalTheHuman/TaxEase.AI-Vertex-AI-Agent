@@ -11,11 +11,11 @@ const Navbar = () => {
         <p className='text-lg '>Your personal tax coach 💸🏛️</p>
       </div>
       
-      <div className='flex justify-between gap-8 text-lg'>
+      {/* <div className='flex justify-between gap-8 text-lg'>
         <h1>Home</h1>
         <h1>What's TaxEase?</h1>
         <h1>Solution</h1>
-      </div>
+      </div> */}
     </div>
     </div>
   )
