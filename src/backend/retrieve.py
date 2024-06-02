@@ -1,3 +1,15 @@
+# import subprocess
+
+# def installDependencies(packages):
+#     for package in packages:
+#         try:
+#             subprocess.run(["pip", "install", package], check=True)
+#         except subprocess.CalledProcessError as e:
+#             print(f"Failed to install package '{package}': {e}")
+
+# packages = ["google-cloud", "google-api-core", "uvicorn", "fastapi", "typing", "vertexai"]
+# installDependencies(packages)
+
 from typing import List
 from google.api_core.client_options import ClientOptions
 from google.cloud import discoveryengine_v1 as discoveryengine
@@ -23,7 +35,6 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    # Add other origins here if you have more frontends
 ]
 
 app.add_middleware(
