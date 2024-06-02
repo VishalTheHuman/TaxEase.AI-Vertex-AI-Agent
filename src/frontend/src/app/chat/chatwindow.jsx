@@ -25,7 +25,7 @@ const ChatWindow = () => {
 
   return (
     <div className="flex flex-col h-[450px] p-2 pt-4">
-      <div className="flex-1 overflow-y-auto mb-4 w-full">
+      <div className="flex-1 overflow-y-auto mb-4 w-full example">
         {messages.map((msg, index) => (
           <div 
             key={index} 

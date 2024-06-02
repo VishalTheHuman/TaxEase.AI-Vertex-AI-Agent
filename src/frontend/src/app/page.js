@@ -29,8 +29,8 @@ export default function Home() {
             </Link>
             <Link href="https://github.com/VishalTheHuman/TaxEase.AI-Vertex-AI-Agent" target="_blank">
 
-              <div className="text-blackish flex gap-2 justify-center bg-accent mt-2 mb-2 p-3 rounded-xl text-lg text-center w-full items-center">
-              <Image src={githublogo} width={25}/>
+              <div className="text-accent flex gap-2 justify-center bg-blackish mt-2 mb-2 p-3 rounded-xl text-lg text-center w-full items-center">
+              <Image src={githublogo} width={30}/>
                 View on Github
               </div>
             </Link>

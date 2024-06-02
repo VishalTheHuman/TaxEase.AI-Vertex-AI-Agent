@@ -50,3 +50,13 @@ df-messenger ::ng-deep .chat-box-container .input-container button {
 df-messenger ::ng-deep .chat-box-container .input-container button:hover {
   background-color: #0059b3; /* Specify your desired hover background color */
 }
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
