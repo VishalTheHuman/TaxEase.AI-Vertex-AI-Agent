@@ -21,21 +21,22 @@ export default function ChatPage() {
     '5498', '8027', '8288-A', '8805', '8814', '8839', '8888', '8919', '8959', '8962', '8995', 'SS-8', 'W-2', 'W-2AS', 'W-2G', 'W-2GU'];
 
   return (
-    <div className="flex h-full">
-      <div className="w-[70%]">
+    <div>
+<div className="flex h-full">
+      <div className="w-[65%]">
       <iframe
           src={pdfSrc} 
           className="w-full h-full"
         /></div>
 
     
-      <div className="w-[30%] bg-blackish">
+      <div className="w-[35%] bg-blackish">
         <div className="bg-primary text-accent text-center p-5 pt-8">
           <Link href="/"><h1 className="font-black leading-5 text-[2rem]">TaxEase.AI</h1></Link>
           
           <p className="text-lg">Your personal tax coach 💸🏛️</p>
 
-          <div className="mt-6">
+          <div className="mt-3">
             <label htmlFor="formSelect">Select a Form:</label><br/>
             <select id="formSelect" className="px-4 py-2 mt-1 text-black rounded-xl focus:outline-0"  onChange={handleFormChange}>
               {formNames.map((formName, index) => (
@@ -49,14 +50,15 @@ export default function ChatPage() {
 
 
 
-        <div className="p-5">
+        <div className="p-5 pb-2">
         <h1 className="text-white text-2xl font-bold">Vertex AI Agent</h1>
         <ChatWindow/>
       </div>
       </div>
-
-
-      
     </div>
+    <div className='bg-black w-full py-4 text-center text-white'>    
+    </div>
+    </div>
+    
   );
 }

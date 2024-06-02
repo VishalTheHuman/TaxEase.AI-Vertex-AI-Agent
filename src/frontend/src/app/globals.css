@@ -13,43 +13,6 @@ video {
     background-size: 100%;
 }
 
-df-messenger {
-    --df-messenger-chat-background: rgb(30, 30, 30);
-    --df-messenger-message-user-background: #e9e9b1;
-    --df-messenger-message-bot-background: #3c6255;
-    --df-messenger-message-bot-font-color: #fff;
-    --df-messenger-message-user-font-color: #000000;
-    flex-grow: 1;
-    
-}
-
-df-messenger-chat{
-    height: 600px;
-}
-df-messenger ::ng-deep .chat-box-container .input-container input[type="text"] {
-  flex-grow: 1;
-  padding: 0.5rem;
-  border: 1px solid #000; /* Specify your desired border color */
-  border-top-left-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
-  outline: none; /* Remove outline on focus */
-}
-
-/* Style for the send button */
-df-messenger ::ng-deep .chat-box-container .input-container button {
-  padding: 0.5rem 1rem;
-  background-color: #3366FF; /* Specify your desired background color */
-  color: #fff; /* Specify your desired text color */
-  border: none;
-  border-top-right-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
-  cursor: pointer;
-}
-
-/* Style for the send button hover state */
-df-messenger ::ng-deep .chat-box-container .input-container button:hover {
-  background-color: #0059b3; /* Specify your desired hover background color */
-}
 
 .example::-webkit-scrollbar {
   display: none;
@@ -60,3 +23,4 @@ df-messenger ::ng-deep .chat-box-container .input-container button:hover {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+

@@ -3,13 +3,14 @@ import Logo from "@/components/Logo"
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import githublogo from "../../public/githublogo.png";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <div>
     <Navbar/>
     <div className="h-full flex flex-col items-center justify-center">
-      <div className="flex items-center justify-evenly">
+      <div className="flex items-center justify-evenly my-4">
       <div className="gif"></div>
         {/* <video width="600" height="500" autoPlay muted loop className="border-0 ">
           <source src="/illustr.mp4" type="video/mp4" />
@@ -39,6 +40,7 @@ export default function Home() {
         
       </div>
     </div>
+    <Footer/>
     </div>
   );
 }
