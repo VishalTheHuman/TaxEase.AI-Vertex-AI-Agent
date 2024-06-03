@@ -7,7 +7,7 @@
 #         except subprocess.CalledProcessError as e:
 #             print(f"Failed to install package '{package}': {e}")
 
-# packages = ["google-cloud", "google-api-core", "uvicorn", "fastapi", "typing", "vertexai"]
+# packages = ["google-cloud", "google-api-core", "uvicorn", "fastapi", "typing", "vertexai","google-cloud-discoveryengine"]
 # installDependencies(packages)
 
 from typing import List

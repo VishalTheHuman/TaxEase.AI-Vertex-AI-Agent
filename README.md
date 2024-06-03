@@ -72,7 +72,69 @@ TaxEase.AI is a user-friendly AI assistant designed to demystify and simplify US
 * **Testing & Refinement:** We'll be conducting thorough testing with real users to gather feedback and make TaxEase.AI even more accurate and user-friendly.
 * **Advocacy for Change:**  We plan to use TaxEase.AI to raise awareness about the need for a simpler, fairer, and more transparent US tax system.  
 
+## **Test Script 🖊️**
+```
+What will be my tax rate if my income is about 65000 USD, Single ?
+```
+```
+What is Section 951(a) inclusion ?
+```
+```
+What are 'Standard deduction or itemized deductions' from Schedule A ? 
+```
+
+## **Screenshots 💻**
+
+### **Agent Preview**
+![](assets/preview1.png)
+![](assets/preview2.png)
+
+### **Diagflow CX Side Panel**
+![](assets/diagflow1.png)
+![](assets/diagflow2.png)
+
+### **Website Deployment**
+![](assets/fastapi.png)
+![](assets/page_intro.png)
+![](assets/img1.png)
+![](assets/img1a.png)
+#### **Zoomed Out**
+![](assets/img2.png)
+
 ## **Setup ⚙️**
+
+### Diagflow CX Side Panel
+
+```html
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  location="northamerica-northeast1"
+  project-id="taxeaseai"
+  agent-id="8fd37925-c76a-47e1-b574-25802ef23665"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat
+   chat-title="">
+  </df-messenger-chat>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #1d1d1d;
+    --df-messenger-message-user-background: #e9e9b1;
+    --df-messenger-message-bot-background: #3c6255;
+    --df-messenger-message-bot-font-color: #fff;
+    --df-messenger-message-user-font-color: #000000;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 350px;
+  }
+</style>
+```
 
 ### **Vertex AI Agent Builder 🤖**
 
@@ -224,6 +286,7 @@ Data
 ```
 ✅ Include snippets in response payload
 ```
+
 ## **Forms and Instructions 📃**
 
 #### **Forms ✒️**
@@ -301,6 +364,3 @@ Data
 - SS-8
 - W-2G_5754
 - W-2, W-3
-
-## **Screenshots 💻**
-
